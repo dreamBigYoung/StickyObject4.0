@@ -106,6 +106,9 @@ public class StickyObject extends View {
         PointF old=new PointF(rawX,rawY);
         float current= GeometryUtil.getDistanceBetween2Points(old,consPoint);
         //判断点间距
+        if(current>LARGEST_DISTANCE){
+
+        }
     }
 
     @Override
