@@ -101,8 +101,11 @@ public class StickyObject extends View {
      * @param rawY
      */
     private void fixDraw(float rawX, float rawY) {
-        //判断点间距
         //LARGEST_DISTANCE
+        //获得当前圆心距
+        PointF old=new PointF(rawX,rawY);
+        float current= GeometryUtil.getDistanceBetween2Points(old,consPoint);
+        //判断点间距
     }
 
     @Override
